@@ -28,7 +28,7 @@ const StatusScreen = ({ navigation }) => {
             Status
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('callsscreen')}>
+        <TouchableOpacity>
           <Text style={{ color: "#fff", fontWeight: '700', fontSize: 18 }}>
             Calls
           </Text>
