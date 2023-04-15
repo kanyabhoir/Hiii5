@@ -74,6 +74,11 @@ export default class PhoneAnimation extends React.Component {
               <FontAwesome name="phone" style={styles.icon} />
               <Text style={styles.text}>Calling...</Text>
             </View>
+
+       
+            <TouchableOpacity style={{ marginBottom: -600, alignItems: "center" }} onPress={this.handleButtonClick} >
+              <Call color={"red"} name='call' size={50} />
+            </TouchableOpacity>
           </View>
 
           : <TouchableOpacity style={{ marginTop: 20 }} onPress={() => this.setState({ letAnimate: !this.state.letAnimate })}>
@@ -108,9 +113,7 @@ export default class PhoneAnimation extends React.Component {
           </TouchableOpacity>}
 
 
-        <TouchableOpacity style={{ marginTop: 300, alignItems: "center" }} onPress={this.handleButtonClick} >
-          <Call color={"red"} name='call' size={50} />
-        </TouchableOpacity>
+
       </>
 
     );

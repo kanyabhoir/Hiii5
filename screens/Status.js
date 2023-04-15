@@ -135,7 +135,7 @@ const Status = () => {
           <>
             <TouchableOpacity
               style={styles.userinfoContainer}>
-              <TouchableOpacity onPress={() => viewStoryes()}>
+              <TouchableOpacity onPress={() => navigation.navigate("viewcontainer")}>
                 <Image style={styles.userimg} source={data.uri} />
               </TouchableOpacity>
               <View style={styles.nameContainer}>
