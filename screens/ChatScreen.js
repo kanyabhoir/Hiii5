@@ -4,7 +4,7 @@ import axios from 'axios'
 const ChatScreen = ({ route }) => {
   const [data, setData] = useState([])
   const [textInput, setTextInput] = useState('')
-  const apiKey = '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'
+  const apiKey = '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'
   const apiurl = 'https://api.openai.com/v1/engines/text-davinci-002/completions'
 
   const { name } = route.params
