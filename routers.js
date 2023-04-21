@@ -23,8 +23,8 @@ export default function Routers() {
   return (
     <NavigationContainer>
      <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName={"Registration"}>
-      {/* <Stack.Screen name="SignUp" component={Registration} /> */}
-      {/* <Stack.Screen name="login" component={Login} /> */}
+      <Stack.Screen name="SignUp" component={Registration} />
+      <Stack.Screen name="login" component={Login} />
       <Stack.Screen name="postupload" component={PostUpload} />
       <Stack.Screen name="statusscreen" component={StatusScreen} />
       <Stack.Screen name="archivedscreen" component={ArchivedScreen} />
