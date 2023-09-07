@@ -1,4 +1,4 @@
-import { POSTUPLOAD, REGISTRATION } from "./Type";
+import { POSTUPLOAD, REGISTRATION,LOGOUT } from "./Type";
 
 
 export const UserRegistraion = (userData) => {
@@ -14,5 +14,12 @@ export const PostUploadHandle = (PostUploadData) => {
     return {
         type: POSTUPLOAD,
         payload: PostUploadData,
+    };
+};
+export const UserLogout = (userData) => {
+    // console.log("userData",userData);
+    return {
+        type: LOGOUT,
+        payload: userData,
     };
 };

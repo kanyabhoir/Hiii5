@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/aboutreact.png",
+      "image": "./assets/SplashScreen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.nakshatra.Hii5"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eac49d0d-b394-4cd1-a911-6b4dec80a85f"
+      }
     }
   }
 }

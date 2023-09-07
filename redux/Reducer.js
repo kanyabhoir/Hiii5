@@ -1,9 +1,10 @@
-import { REGISTRATION,POSTUPLOAD } from "./Type";
+import { REGISTRATION,POSTUPLOAD,LOGOUT } from "./Type";
 
 
 const initialState = {
     registeredUser: undefined,
     postUpload: undefined,
+    UserLogout: undefined,
 };
 
 const UserReducer = (state = initialState, { type, payload }) => {
@@ -12,6 +13,11 @@ const UserReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 registeredUser : payload,
+            };
+        case LOGOUT:
+            return {
+                ...state,
+                UserLogout : payload,
             };
         case POSTUPLOAD:
             return {
